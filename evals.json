@@ -1,0 +1,49 @@
+{
+  "skill_name": "awareness-level-diagnosis",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "I'm running cold Facebook ads to a lead magnet for real estate investors who want to flip houses. The ad targets people aged 30-55 who have liked real estate pages. What's my awareness level and how should I write my opt-in page?",
+      "expected_output": "Diagnoses Level 1-2 (cold paid social, interest-based targeting = no self-identified problem awareness). Outputs a full Strategic Awareness Brief. Prescribes a story or pattern-interrupt entry angle. Warns against leading with 'flipping houses' solution language in the headline.",
+      "assertions": [
+        "Awareness level is diagnosed as Level 1 or Level 2",
+        "Traffic source (cold Facebook ads) is used as the primary diagnostic signal",
+        "A complete Strategic Awareness Brief is produced with all required sections",
+        "The prescribed copy angle avoids leading with the solution",
+        "The brief specifies dominant emotion for this market"
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "I have an email list of 4,000 people who have been following my content about keto dieting for 2 years. They know who I am. I want to create a lead magnet for a new program. What awareness level are they at?",
+      "expected_output": "Diagnoses Level 4-5 (warm existing audience with long-term content relationship). Brief reflects trust already established. Prescribes short copy, proof-heavy or offer-heavy approach. Notes that over-explaining would damage rather than help conversion.",
+      "assertions": [
+        "Awareness level is diagnosed as Level 4 or Level 5",
+        "The brief notes that existing trust is a key factor",
+        "The prescribed copy angle is shorter and more direct than lower-level angles",
+        "The brief correctly identifies what this market already knows about the creator"
+      ]
+    },
+    {
+      "id": 3,
+      "prompt": "My lead magnet targets people searching Google for 'best lead magnet ideas for coaches'. What awareness level is this and what should my headline look like?",
+      "expected_output": "Diagnoses Level 3 (solution-aware — they know lead magnets exist, are seeking the best approach). Prescribes a mechanism-differentiation angle. Headline frame should highlight unique mechanism or unique result, not just existence of solution.",
+      "assertions": [
+        "Awareness level is diagnosed as Level 3",
+        "The search query is correctly interpreted as solution-aware behavior",
+        "The headline frame prescribed emphasizes differentiation from known alternatives",
+        "The brief warns against simply re-stating that lead magnets work (they already know this)"
+      ]
+    },
+    {
+      "id": 4,
+      "prompt": "I'm not sure what traffic source I'll use yet. Can you still diagnose awareness level for my lead magnet about productivity for remote workers?",
+      "expected_output": "Agent asks for traffic source before proceeding, explaining it is required for accurate diagnosis. Does not default to a guess without noting the uncertainty. Offers to default to Level 2 if the user wants to proceed before deciding on traffic.",
+      "assertions": [
+        "Agent requests traffic source information before completing the diagnosis",
+        "Agent explains why traffic source is required for this skill",
+        "Agent offers a path forward (default to Level 2) if user cannot provide traffic source"
+      ]
+    }
+  ]
+}
